@@ -7,7 +7,7 @@ importScripts(
 
 workbox.loadModule('workbox-background-sync');
 
-const { registerRoute } = workbox.routing;
+const { NavigationRoute, registerRoute } = workbox.routing;
 const { CacheFirst, NetworkFirst, NetworkOnly } = workbox.strategies;
 const { BackgroundSyncPlugin } = workbox.backgroundSync;
 
@@ -22,6 +22,11 @@ self.__precacheManifest = [
 ].concat(self.__WB_MANIFEST);
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest);
+registerRoute(
+	new NavigationRoute(
+		workbox.precaching.createHandlerBoundToURL('/index.html'),
+	),
+);
 
 // Forma alternativa, aunque no se almacena en el «app shell» (precache),
 // sino en el «workbox-runtime» del Cache Storage

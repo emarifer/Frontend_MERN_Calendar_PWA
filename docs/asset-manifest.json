@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Frontend_MERN_Calendar_PWA/static/css/main.77633832.chunk.css",
-    "main.js": "/Frontend_MERN_Calendar_PWA/static/js/main.73ccad10.chunk.js",
-    "main.js.map": "/Frontend_MERN_Calendar_PWA/static/js/main.73ccad10.chunk.js.map",
+    "main.js": "/Frontend_MERN_Calendar_PWA/static/js/main.0acb68fa.chunk.js",
+    "main.js.map": "/Frontend_MERN_Calendar_PWA/static/js/main.0acb68fa.chunk.js.map",
     "runtime-main.js": "/Frontend_MERN_Calendar_PWA/static/js/runtime-main.0cfaf758.js",
     "runtime-main.js.map": "/Frontend_MERN_Calendar_PWA/static/js/runtime-main.0cfaf758.js.map",
     "static/css/2.e9a09165.chunk.css": "/Frontend_MERN_Calendar_PWA/static/css/2.e9a09165.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.e9a09165.chunk.css",
     "static/js/2.f3a1e82a.chunk.js",
     "static/css/main.77633832.chunk.css",
-    "static/js/main.73ccad10.chunk.js"
+    "static/js/main.0acb68fa.chunk.js"
   ]
 }
