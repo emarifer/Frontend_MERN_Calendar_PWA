@@ -22,7 +22,6 @@ self.__precacheManifest = [
 ].concat(self.__WB_MANIFEST);
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest);
-workbox.routing.registerNavigationRoute('/index.html');
 
 // Forma alternativa, aunque no se almacena en el «app shell» (precache),
 // sino en el «workbox-runtime» del Cache Storage

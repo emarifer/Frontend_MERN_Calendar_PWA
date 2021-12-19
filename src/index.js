@@ -20,5 +20,4 @@ ReactDOM.render(
  * git ignore .env files not working. VER:
  * https://stackoverflow.com/questions/38983153/git-ignore-env-files-not-working
  * 
- * 
  */
