@@ -7,7 +7,7 @@ importScripts(
 
 workbox.loadModule('workbox-background-sync');
 
-const { NavigationRoute, registerRoute } = workbox.routing;
+const { registerRoute } = workbox.routing;
 const { CacheFirst, NetworkFirst, NetworkOnly } = workbox.strategies;
 const { BackgroundSyncPlugin } = workbox.backgroundSync;
 
@@ -22,11 +22,7 @@ self.__precacheManifest = [
 ].concat([{"revision":"825cea17f099f113dba8bb7ce230bff3","url":"asset-manifest.json"},{"revision":"6e1267d9d946b0236cdf6ffd02890894","url":"favicon.ico"},{"revision":"7f965a51d4822f9905576c374d9980b4","url":"index.html"},{"revision":"33dbdd0177549353eeeb785d02c294af","url":"logo192.png"},{"revision":"917515db74ea8d1aee6a246cfbcc0b45","url":"logo512.png"},{"revision":"0eaf92d85364520b90c3477de21b8fc1","url":"manifest.json"},{"revision":"fa1ded1ed7c11438a9b0385b1e112850","url":"robots.txt"},{"revision":"82814859f77a8328346dd35d76d1fbc4","url":"static/css/2.e9a09165.chunk.css"},{"revision":"b807010c6ee186c02f043fb0ba0ac9fa","url":"static/css/main.77633832.chunk.css"},{"revision":"e6e620859852fac4254cf8905f8fe6c4","url":"static/js/2.f3a1e82a.chunk.js"},{"revision":"2783cb611cfe78d22f7194d9d4695716","url":"static/js/2.f3a1e82a.chunk.js.LICENSE.txt"},{"revision":"7f484bdb834fab0e3f02644c1defdd36","url":"static/js/main.0acb68fa.chunk.js"},{"revision":"0bb2c1150843a02cb77c54b8b5e65baa","url":"static/js/runtime-main.0cfaf758.js"}]);
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest);
-registerRoute(
-	new NavigationRoute(
-		workbox.precaching.createHandlerBoundToURL('/index.html'),
-	),
-);
+workbox.routing.registerNavigationRoute('/index.html');
 
 // Forma alternativa, aunque no se almacena en el «app shell» (precache),
 // sino en el «workbox-runtime» del Cache Storage
