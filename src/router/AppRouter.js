@@ -30,7 +30,7 @@ export const AppRouter = () => {
 
 
     return (
-        <Router>
+        <Router basename="/Frontend_MERN_Calendar_PWA">
             <div>
                 <Switch>
 
